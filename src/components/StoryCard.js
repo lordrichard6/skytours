@@ -5,13 +5,13 @@ import HeadingTerciary from '../components/HeadingTerciary';
 class StoryCard extends Component {
     render() {
         return (
-        <div class="row">
-            <div class="story">
-                <figure class="story__shape">
-                    <img class="story__img" src={this.props.img} alt=""/>
-                    <figcaption class="story__caption">{this.props.name}</figcaption>
+        <div className="row">
+            <div className="story">
+                <figure className="story__shape">
+                    <img className="story__img" src={this.props.img} alt=""/>
+                    <figcaption className="story__caption">{this.props.name}</figcaption>
                 </figure>
-                <div class="story__text">
+                <div className="story__text">
                     <HeadingTerciary title={this.props.title} />
                     <p>
                         {this.props.text}

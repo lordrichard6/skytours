@@ -11,15 +11,15 @@ import video from '../img/video.mp4';
 class Stories extends Component {
     render() {
         return (
-            <section class="section-stories" id="stories">
-                <div class="bg-video">
-                    <video class="bg-video__content" autoPlay muted loop>
+            <section className="section-stories" id="stories">
+                <div className="bg-video">
+                    <video className="bg-video__content" autoPlay muted loop>
                         <source src={video} type="video/mp4"/>
                         {/* <source src="img/video.webm" type="video/webm"/> */}
                             Video not suported!
                     </video>
                 </div>
-                <div class="u-center-text u-margin-bottom-big">
+                <div className="u-center-text u-margin-bottom-big">
                     <HeadingSecondary title='you feedback is important' />
                 </div>
                 <StoryCard  name='Marion Schmitt'
@@ -30,7 +30,7 @@ class Stories extends Component {
                             img={photo2}
                             title='I loved every minute of it'
                             text="This is not a difficult hike when started from a new location accessible only by tour buses and private cars - it is gradual and in the worst case you can always hire a horse. The very last 1/4 of a mile is more difficult - much steeper and less oxygen. But his hike is worth all the effort - amazing!"/>
-                <div class="u-center-text u-margin-top-huge">
+                <div className="u-center-text u-margin-top-huge">
                     <Button href='#' class='btn-text' text='Read all stories &rarr;' />
                 </div>
             </section>

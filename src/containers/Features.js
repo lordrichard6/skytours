@@ -9,8 +9,8 @@ import FeatureBox from '../components/FeatureBox';
 class Features extends Component {
     render() {
         return (
-            <section class="section-features" id="features">   
-                <div class="row">
+            <section className="section-features" id="features">   
+                <div className="row">
                     <FeatureBox 
                             title='Explore the world' 
                             icon='feature-box__icon icon-basic-world'

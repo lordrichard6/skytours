@@ -8,11 +8,11 @@ import Button from '../components/Button';
 class Tours extends Component {
     render() {
         return (
-            <section class="section-tours" id="tours">
-                <div class="u-center-text u-margin-bottom-big">
+            <section className="section-tours" id="tours">
+                <div className="u-center-text u-margin-bottom-big">
                     <HeadingSecondary title='Our popular tours' />
                 </div>
-                <div class="row">
+                <div className="row">
                    <TourCard    nr='1'
                                 title='The sea explorer'
                                 item_1='3 day tour'
@@ -38,7 +38,7 @@ class Tours extends Component {
                                 item_5='Difficulty: hard'
                                 price='CHF 899'/>
                 </div>
-                <div class="u-center-text u-margin-top-huge">
+                <div className="u-center-text u-margin-top-huge">
                     <Button href='#' class='btn btn--green' text='Discover all tours' />
                 </div>
             </section>

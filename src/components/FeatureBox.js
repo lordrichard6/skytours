@@ -6,12 +6,12 @@ import HeadingTerciary from './HeadingTerciary';
 class FeatureBox extends Component {
     render() {
         return (
-            <div class="col-1-of-4">
-                <div class="feature-box">
-                    {/* <i class="feature-box__icon icon-basic-world"></i> */}
-                    <i class={this.props.icon}></i>
+            <div className="col-1-of-4">
+                <div className="feature-box">
+                    {/* <i className="feature-box__icon icon-basic-world"></i> */}
+                    <i className={this.props.icon}></i>
                     <HeadingTerciary title={this.props.title}/>
-                    <p class="feature-box__text">
+                    <p className="feature-box__text">
                         {this.props.text}
                     </p>
                 </div>

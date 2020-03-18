@@ -6,14 +6,14 @@ import Button from '../components/Button';
 class Header extends Component {
     render() {
         return (
-        <header class="header">
-            <div class="header__logo-box">
-                <img src={logo} alt="natours logo" class="header__logo"/>
+        <header className="header" id='header'>
+            <div className="header__logo-box">
+                <img src={logo} alt="natours logo" className="header__logo"/>
             </div>
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Skytours</span>
-                    <span class="heading-primary--sub">know nature like a pro</span>
+            <div className="header__text-box">
+                <h1 className="heading-primary">
+                    <span className="heading-primary--main">Skytours</span>
+                    <span className="heading-primary--sub">know nature like a pro</span>
                 </h1>
                 <Button href='#tours' class='btn btn--white btn--animated' text='See the Tours' />
             </div>
