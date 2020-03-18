@@ -30,7 +30,7 @@ class TourCard extends Component {
                                 <p className="card__price-only">Only</p>
                                 <p className="card__price-value">{this.props.price}</p>
                             </div>
-                            <Button href='#popup' className='btn btn--white' text='Book Now!' />
+                            <Button href='#popup' class='btn btn--white' text='Book Now!' />
                         </div>
                     </div>
                 </div>
