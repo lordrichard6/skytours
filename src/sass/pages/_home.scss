@@ -4,7 +4,7 @@
     margin-top: -20vh;
 
     @include responsive(tab-port) {
-        padding: 22rem 0;
+        padding: 22rem 4rem;
     }
 }
 
@@ -30,7 +30,7 @@
     margin-top: -12rem;
 
     @include responsive(tab-port) {
-        padding: 20rem 0 10rem 0;
+        padding: 20rem 4rem;
     }
 }
 
@@ -39,17 +39,7 @@
     position: relative;
 
     @include responsive(tab-port) {
-        padding: 10rem 0;
-    }
-
-    .row {
-        @include responsive(tab-port) {
-            max-width: 70rem;
-        }
-
-        @include responsive(phone) {
-            max-width: 50rem;
-        }
+        padding: 6rem 4rem;
     }
 }
 
@@ -58,7 +48,7 @@
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 
     @include responsive(tab-port) {
-        padding: 10rem 0;
+        padding: 10rem 4rem;
     }
 }
 
