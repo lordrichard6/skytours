@@ -134,7 +134,8 @@
         font-weight: 100;
     }
 
-    @include responsive(tab-port) {
+
+    @include responsive(tab-land) {
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
@@ -143,12 +144,16 @@
         &__side {
             height: auto;
             position: relative;
-            box-shadow: none;            
+            box-shadow: none;     
             
             &--back {
                 transform: rotateY(0);
                 clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
             }
+        }
+
+        &:hover &__side--front {
+            transform: rotateY(0);
         }
 
         &__details {
