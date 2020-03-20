@@ -4,7 +4,6 @@ body {
     font-size: $default-font-size;
     line-height: 1.7;
     color: $color-grey-dark;
-    // padding: 3rem;
 }
 
 .heading-primary {
@@ -20,14 +19,23 @@ body {
         letter-spacing: 3.5rem;
     
         animation: moveInLeft 1s ease-out;
+
+        @include responsive(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
     }
     
     &--sub {
-         display: block;
-         font-size: 2rem;
-         font-weight: 400;
-         letter-spacing: 1.75rem;
-         animation: moveInRight 1s ease-out;
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-out;
+
+        @include responsive(phone) {
+            letter-spacing: .5rem;
+        }
     }
 }
 
@@ -40,10 +48,17 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     
-    
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
+
+    @include responsive(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include responsive(phone) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
